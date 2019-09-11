@@ -12,9 +12,9 @@ const gulp = require('gulp');
 const tiny = require('gulp-tinypng-web');
 
 exports.default = () => {
-gulp.src(./src/images/*)
-	.pipe(tiny())
-	.pipe(gulp.dest('./dist/images'))
+  gulp.src('./src/images/*')
+    .pipe(tiny())
+    .pipe(gulp.dest('./dist/images'))
 };
 ```
 
@@ -29,3 +29,4 @@ Type: `Object`
 gulp-tinypng-web: ✔ banner.jpg 87.1 kB -> 42.8 kB (saved 50.8%)
 gulp-tinypng-web: ✔ show_award.png 66.1 kB -> 19.9 kB (saved 69.8%)
 ```
+  
