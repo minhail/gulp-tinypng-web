@@ -1,5 +1,5 @@
 # gulp-tinypng-web
-> 模拟tinypng上传下载来压缩图片
+use tinypng to compress images
 
 ## Install
 ```
@@ -12,9 +12,9 @@ const gulp = require('gulp');
 const tiny = require('gulp-tinypng-web');
 
 exports.default = () => {
-	gulp.src(./src/images/*)
-    .pipe(tiny())
-		.pipe(gulp.dest('./dist/images'))
+gulp.src(./src/images/*)
+	.pipe(tiny())
+	.pipe(gulp.dest('./dist/images'))
 };
 ```
 
